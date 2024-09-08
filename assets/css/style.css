@@ -421,7 +421,7 @@
   .hero {
     position: relative;
     padding-block: 120px;
-    min-height: 110vh;
+    min-height: 100vh;
     overflow: hidden;
     z-index: 1;
   }
@@ -1102,7 +1102,7 @@
   .lobster-menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 45px;
   }
 
   .lobster-menu a{
@@ -1127,6 +1127,6 @@ font-size:2rem;
     }
   
     .lobster-logo {
-      margin-left:15%;
+      margin-left:8%;
     }
   }
