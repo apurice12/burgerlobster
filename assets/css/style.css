@@ -1117,26 +1117,43 @@ font-size:2rem;
     
   }
 
-  @media (max-width: 768px) {
-    .lobster-menu {
-      display: none;
-    }
-  
-    .lobster-container {
-      justify-content: center; /* Center the logo on mobile */
-    }
-  
-    .lobster-nav {
-      padding: 0; /* Remove padding to avoid shifting the logo */
-    }
-  
-    .lobster-logo img {
-      width: 350px; /* Make logo more responsive on mobile */
-      margin: 0 auto; /* Ensure the logo is centered */
-    }
-   
-    .hero-title{
-      margin-top:-25%;
-    }
-
+ /* Mobile Portrait styles */
+@media (max-width: 768px) {
+  .lobster-menu {
+    display: none;
   }
+
+  .lobster-container {
+    justify-content: center; /* Center the logo on mobile */
+  }
+
+  .lobster-nav {
+    padding: 0; /* Remove padding to avoid shifting the logo */
+  }
+
+  .lobster-logo img {
+    width: 300px; /* Make logo smaller on mobile portrait */
+    margin: 0 auto; /* Ensure the logo is centered */
+  }
+}
+
+/* Mobile Landscape styles */
+@media (max-width: 768px) and (orientation: landscape) {
+  .lobster-container {
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .lobster-logo img {
+    width: 300px; /* Make logo smaller in landscape mode */
+  }
+
+  .lobster-nav {
+    top: 10px; /* Adjust the position slightly lower in landscape mode */
+  }
+
+  /* Add some padding to ensure the content doesn't overlap with the navbar */
+  .hero {
+    padding-top: 100px; /* Ensure content is pushed down to avoid overlap */
+  }
+}
