@@ -1117,14 +1117,16 @@ font-size:2rem;
     
   }
 
-  
-  /* Mobile styles */
   @media (max-width: 768px) {
     .lobster-menu {
       display: none;
     }
   
+    .lobster-container {
+      justify-content: center; /* Center the logo on smaller screens */
+    }
+  
     .lobster-logo {
-      margin: 0 auto;
+      margin-left:15%;
     }
   }
