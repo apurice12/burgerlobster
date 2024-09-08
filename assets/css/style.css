@@ -1123,10 +1123,20 @@ font-size:2rem;
     }
   
     .lobster-container {
-      justify-content: center; /* Center the logo on smaller screens */
+      justify-content: center; /* Center the logo on mobile */
     }
   
-    .lobster-logo {
-      margin-left:8%;
+    .lobster-nav {
+      padding: 0; /* Remove padding to avoid shifting the logo */
     }
+  
+    .lobster-logo img {
+      width: 350px; /* Make logo more responsive on mobile */
+      margin: 0 auto; /* Ensure the logo is centered */
+    }
+   
+    .hero-title{
+      margin-top:-25%;
+    }
+
   }
