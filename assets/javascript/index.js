@@ -131,7 +131,7 @@ let autoSlideInterval;
 const autoSlide = function () {
   autoSlideInterval = setInterval(function () {
     slideNext();
-  }, 5500);
+  }, 8500);
 }
 
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {

@@ -460,7 +460,7 @@
   }
   
   .hero .slider-item.active .slider-bg {
-    animation: smoothScale 5.5s linear forwards;
+    animation: smoothScale 8.5s linear forwards;
   }
   
   @keyframes smoothScale {
