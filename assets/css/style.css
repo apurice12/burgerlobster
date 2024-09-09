@@ -699,7 +699,7 @@
     :is(.service, .about) .section-text {
       max-width: 420px;
       margin-inline: auto;
-
+      margin-top:4%;
     }
   
     .contact-number { --fontSize-body-1: 3rem; }
@@ -1149,7 +1149,7 @@ font-size:2rem;
   }
 
   .lobster-nav {
-    top: 10px; /* Adjust the position slightly lower in landscape mode */
+    top: 20px; /* Adjust the position slightly lower in landscape mode */
   }
 
   /* Add some padding to ensure the content doesn't overlap with the navbar */
@@ -1157,3 +1157,5 @@ font-size:2rem;
     padding-top: 100px; /* Ensure content is pushed down to avoid overlap */
   }
 }
+
+
