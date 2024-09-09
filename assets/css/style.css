@@ -560,6 +560,9 @@
     .header .container .navbar{
       display:none;
     }
+    .section-text{
+      margin-top:5%
+    }
   }
   
   @media (max-width: 768px) {
@@ -567,11 +570,17 @@
     
     display:none;
     }
+    .section-text{
+      margin-top:5%
+    }
   }
   @media (max-width: 480px) {
     .header .container .navbar {
     
     display:none;
+    }
+    .section-text{
+      margin-top:5%
     }
   }
 
@@ -819,7 +828,7 @@
      * FOOTER
      */
   
-    .footer-brand { grid-column: 1 / 3; }
+    .footer-brand { grid-column: 1 / 4; }
   
   }
   
@@ -1011,7 +1020,7 @@
      * ABOUT
      */
   
-    .about { padding-block: 170px 100px; }
+   
 
   
   }
@@ -1158,4 +1167,98 @@ font-size:2rem;
   }
 }
 
+.lobster-footer {
+  color: #fff; /* White text color */
+  padding: 40px 20px; /* Generous padding for spacing */
+}
 
+.lobster-container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Keeps minimal gap */
+  align-items: flex-start; /* Aligns content at the top */
+  padding: 0 15px; /* Prevents content from touching the edges */
+}
+
+.lobster-footer-content {
+  display: flex;
+  width: 100%;
+  flex-direction: row; /* Keep the desktop layout as a row */
+}
+
+
+.lobster-footer-brand{
+  padding-top:3%;
+}
+
+.lobster-footer-social{
+  padding-top:3%;
+}
+
+.map-lobster,
+.lobster-footer-brand,
+.lobster-footer-social {
+  flex: 1; /* Equal spacing on desktop */
+  text-align: center; /* Center text on desktop */
+  
+}
+
+.map-lobster iframe {
+  width: 100%;
+  height: 250px; /* Appropriate height for desktop */
+  border: none;
+}
+
+.lobster-footer-heading,
+.address-lobster,
+.contact-link-lobster,
+.hours-lobster {
+  margin-bottom: 5px; /* Consistent spacing for all text elements */
+}
+
+.contact-link-lobster {
+  color: #f8f9fa;
+  text-decoration: none; /* No underline by default */
+}
+
+.contact-link-lobster:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.lobster-footer-list {
+  list-style: none; /* No bullets */
+  padding: 0;
+}
+
+.lobster-footer-list li {
+  margin-bottom: 5px; /* Spacing between social icons */
+}
+
+.social-link-lobster {
+  color: #f8f9fa;
+  text-decoration: none; /* No underline by default */
+}
+
+.social-link-lobster:hover {
+  color: #adb5bd; /* Lighten color on hover */
+}
+
+/* Mobile adjustments for screens smaller than 576px */
+@media (max-width: 576px) {
+  .lobster-footer-content {
+    flex-direction: column; /* Stack elements vertically on mobile */
+  }
+
+  .map-lobster,
+  .lobster-footer-brand,
+  .lobster-footer-social {
+    width: 100%; /* Full width for each section on mobile */
+    padding: 10px 0; /* Padding to space out sections vertically */
+    text-align: center; /* Center text for readability on mobile */
+  }
+
+  .map-lobster iframe {
+    height: 200px; /* Reduced height for mobile */
+  }
+}
